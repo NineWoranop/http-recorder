@@ -1,0 +1,1 @@
+go build -o dist\http-recorder-windows-amd64.exe main.go
