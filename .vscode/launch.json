@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Package",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceRoot}",
+            "args": [
+                // Connect to my local prometheus on port 9090
+                "-url=http://localhost:9090/metrics",
+                "-scrape-interval=10s",
+                "-path=./sample/",
+                "-total-dat-file=1"
+            ],
+            "showLog": true
+        }
+    ]
+}

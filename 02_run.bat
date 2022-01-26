@@ -1,0 +1,1 @@
+go run . -url=http://localhost:9090/metrics -scrape-interval=10s -total-dat-file=1 -path=./sample/

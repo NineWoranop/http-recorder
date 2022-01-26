@@ -1,0 +1,1 @@
+go build -o dist/http-recorder-linux-amd64 main.go;cd dist;tar -czvf http-recorder-linux-amd64.tar.gz http-recorder-linux-amd64;cd ..;

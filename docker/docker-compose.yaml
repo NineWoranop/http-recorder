@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  http-recorder:
+    build: http-recorder/.
+    command:
+    - '-autorepeat=false'
+    - '-url=http://localhost:9090/metrics'
+    - '-path=/data/'
+    volumes:
+      - ./http-recorder/mount:/data
